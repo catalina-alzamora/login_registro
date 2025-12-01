@@ -62,6 +62,7 @@ public class Usuario {
     private LocalDate fechaActualizacion;
     
     @Transient
+    @NotNull(message = "Este campo es obligatorio.")
     private String confirmarPassword;
 
     public Usuario() {
